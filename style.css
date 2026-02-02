@@ -29,3 +29,25 @@
  * Bon courage ! 🎨
  * =====================================================
  */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+.header-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #16046f;
+  color: white;
+  padding: 16px;
+}
+
+.header-title {
+  font-size: 32pxm;
+  font-weight: bold;
+}
