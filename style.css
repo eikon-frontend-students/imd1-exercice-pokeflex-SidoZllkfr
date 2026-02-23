@@ -44,7 +44,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #16046f;
+  background-color: #25286b;
   color: white;
   padding: 16px;
 }
@@ -93,7 +93,7 @@ body {
 
 .search-button {
   padding: 8px 16px;
-  background-color: #16046f;
+  background-color: #25286b;
   color: white;
   border: none;
   border-radius: 4px;
@@ -196,7 +196,7 @@ body {
 .cards-stats-flex {
   display: flex;
   flex-direction: column;
-  padding: 0 16px 16px;
+  padding: 16px;
 }
 
 .stat-row-flex {
@@ -204,6 +204,7 @@ body {
   justify-content: space-between;
   margin-bottom: 4px 0;
   border-bottom: 1px solid #eee;
+  padding: 0 8px;
 }
 
 .type-feu {
@@ -253,6 +254,9 @@ body {
 }
 .type-fée {
   background-color: #ee99ac;
+}
+.type-psy {
+  background-color: #f85888;
 }
 
 .stat-row-flex:last-child {
