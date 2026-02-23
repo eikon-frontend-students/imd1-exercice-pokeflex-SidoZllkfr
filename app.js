@@ -273,7 +273,8 @@
       // Crée un badge pour chaque type
       types.forEach(function (typeName) {
         const badge = document.createElement("span");
-        badge.className = "type-badge";
+        badge.classList.add("type-badge");
+        badge.classList.add("type-" + typeName.toLowerCase()); // Classe pour le style spécifique au type
         badge.textContent = typeName;
         typesContainer.appendChild(badge);
       });

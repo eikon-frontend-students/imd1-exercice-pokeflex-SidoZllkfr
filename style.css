@@ -31,13 +31,15 @@
  */
 
 body {
-  font-family: Arial, sans-serif;
+  font-family:
+    arial,
+    sans serif;
   background-color: #f0f0f0;
   color: #333;
   line-height: 1.6;
 }
 
-/* Header (titre) */
+/* titre */
 .header-flex {
   display: flex;
   justify-content: center;
@@ -52,7 +54,7 @@ body {
   font-weight: bold;
 }
 
-/* Main (recherche -> conteneur des cartes)*/
+/* recherche -> conteneur des cartes */
 .main-flex {
   display: flex;
   flex-direction: column;
@@ -61,7 +63,7 @@ body {
   padding: 16px;
 }
 
-/* Search section (barre derecherche) */
+/* barre de recherche*/
 .search-flex {
   display: flex;
   flex-direction: column;
@@ -86,7 +88,7 @@ body {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 16px;
+  margin-bottom: 16px;
 }
 
 .search-button {
@@ -97,4 +99,183 @@ body {
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
+}
+
+/* petit effet */
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.search-helper {
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;
+}
+
+/* message d'erreur */
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+/* conteneur des cartes */
+.cards-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+/* cartes */
+.card-flex {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 300px;
+  transition: transform 0.2s;
+  box-shadow: 0 2px 8px black;
+}
+
+/* petit effet*/
+.card-flex:hover {
+  transform: translateY(-5px);
+}
+
+.card-image-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 16px;
+}
+
+.card-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-info-flex {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  text-align: center;
+}
+
+.card-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card-id .card-generation {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.card-types-flex {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 0 16px 16px;
+}
+
+.type-badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.cards-stats-flex {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px 16px;
+}
+
+.stat-row-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.type-feu {
+  background-color: #f08030;
+}
+.type-eau {
+  background-color: #6890f0;
+}
+.type-électrik {
+  background-color: #f8d030;
+}
+.type-herbe {
+  background-color: #78c850;
+}
+.type-glace {
+  background-color: #98d8d8;
+}
+.type-combat {
+  background-color: #c03028;
+}
+.type-poison {
+  background-color: #a040a0;
+}
+.type-sol {
+  background-color: #e0c068;
+}
+.type-vol {
+  background-color: #a890f0;
+}
+.type-spectre {
+  background-color: #705898;
+}
+.type-insecte {
+  background-color: #a8b820;
+}
+.type-roche {
+  background-color: #b8a038;
+}
+.type-dragon {
+  background-color: #7038f8;
+}
+.type-tenebres {
+  background-color: #705848;
+}
+.type-acier {
+  background-color: #b8b8d0;
+}
+.type-fée {
+  background-color: #ee99ac;
+}
+
+.stat-row-flex:last-child {
+  border-bottom: none;
+}
+
+.stat-label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.stat-value {
+  font-size: 14px;
+}
+
+/* rendre responsive */
+@media (max-width: 768px) {
+  .card-flex {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .header-title {
+    font-size: 24px;
+  }
 }
