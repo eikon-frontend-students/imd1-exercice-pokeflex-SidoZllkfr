@@ -44,7 +44,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #25286b;
+  background: linear-gradient(180deg, #16046f 0%, #0066ff 50%, #00ccff 100%);
   color: white;
   padding: 16px;
 }
@@ -52,6 +52,23 @@ body {
 .header-title {
   font-size: 32px;
   font-weight: bold;
+}
+
+.header-title img:hover {
+  animation: wobble 1s infinite;
+}
+
+@keyframes wobble {
+  0%,
+  100% {
+    transform: rotateZ(0deg);
+  }
+  25% {
+    transform: rotateZ(1deg);
+  }
+  75% {
+    transform: rotateZ(-1deg);
+  }
 }
 
 /* recherche -> conteneur des cartes */
@@ -93,7 +110,7 @@ body {
 
 .search-button {
   padding: 8px 16px;
-  background-color: #25286b;
+  background-color: #16046f;
   color: white;
   border: none;
   border-radius: 4px;
@@ -103,7 +120,7 @@ body {
 
 /* petit effet */
 .search-button:hover {
-  background-color: #0056b3;
+  background-color: #0066ff;
 }
 
 .search-helper {
@@ -187,10 +204,12 @@ body {
 .type-badge {
   padding: 4px 8px;
   border-radius: 4px;
-  color: rgb(0, 0, 0);
+  color: white;
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .cards-stats-flex {
@@ -207,6 +226,9 @@ body {
   padding: 0 8px;
 }
 
+.type-normal {
+  background-color: #d6d699;
+}
 .type-feu {
   background-color: #f08030;
 }
@@ -257,6 +279,12 @@ body {
 }
 .type-psy {
   background-color: #f85888;
+}
+.type-plante {
+  background-color: #78c850;
+}
+.type-ténèbres {
+  background-color: #000000;
 }
 
 .stat-row-flex:last-child {
