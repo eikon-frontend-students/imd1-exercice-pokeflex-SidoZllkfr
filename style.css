@@ -36,7 +36,6 @@ body {
     sans serif;
   background-color: #f0f0f0;
   color: #333;
-  line-height: 1.6;
 }
 
 /* titre */
@@ -55,7 +54,9 @@ body {
 }
 
 .header-title img:hover {
-  animation: wobble 1s infinite;
+  animation:
+    wobble 0.5s ease-in-out 1,
+    wobble 0.5s ease-in-out 2.5s infinite;
 }
 
 @keyframes wobble {
@@ -142,6 +143,7 @@ body {
   flex-wrap: wrap;
   gap: 16px;
   justify-content: center;
+  flex-direction: row;
 }
 
 /* cartes */
@@ -154,6 +156,7 @@ body {
   max-width: 300px;
   transition: transform 0.2s;
   box-shadow: 0 2px 8px black;
+  padding-bottom: 0.1cm;
 }
 
 /* petit effet*/

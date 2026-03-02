@@ -302,7 +302,7 @@
     if (speedEl) speedEl.textContent = stats.speed;
 
     // Ajoute la carte au conteneur
-    cardsContainer.appendChild(card);
+    cardsContainer.prepend(card);
   }
 
   /**
